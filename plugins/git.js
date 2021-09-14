@@ -11,7 +11,7 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.WP}, (async (message
     
     
    
-  r_text[0] = "https://i.imgur.com/yCYYyEJ.jpeg";
+  r_text[0] = "http://telegra.ph/file/68809ff84d7cd4447a76e.jpg";
     
     
     var i = Math.floor(1*Math.random())
@@ -25,7 +25,7 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.WP}, (async (message
 
 *githublink : https://github.com/amal-dx/DXTROX_V1*
 
-*audio commads : https://github.com/cyberchekuthan/Amalser_v2/tree/master/uploads*
+*audio commads : https://github.com/amal-dx/DXTROX_V1/tree/master/uploads*
 `}) 
 
 }));
