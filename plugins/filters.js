@@ -1,5 +1,5 @@
-/* Copyright (C) 2020 farhan-dqz.
-julie 
+/* Copyright (C) 2021 terror-boy.
+                - DXTROX_V1
 */
 const fs = require('fs')
 const Asena = require('../events');
