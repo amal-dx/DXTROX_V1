@@ -55,6 +55,9 @@
         "news": {
             "NEWS_DESC": "It send News."
        },
+        "Autovideo": {
+            "AV": "to get autovideo commands"
+      },
         "whatsappstatus": {
             "WS": "It sends Whatsapp status."
        },
