@@ -54,7 +54,10 @@
         },
         "news": {
             "NEWS_DESC": "It send News."
-        },
+       },
+        "whatsappstatus": {
+            "WS": "It sends Whatsapp status."
+       },
         "afk": {
             "AFK_DESC": "It makes you AFK - Away From Keyboard.",
             "IM_AFK": "*I'm AFK now!*",
