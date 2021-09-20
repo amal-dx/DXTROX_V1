@@ -148,7 +148,7 @@
             "required": false,
             "value": "\n ```I Am Alive !!!```\n\n```Type``` *.help* ```for commands``` ```coded by Amal sir```"
 
-        }, "
+        },
         },
         "BAN_MESSAGE": {
             "description": "Customizable Ban Message! Use => default, to change back.",
