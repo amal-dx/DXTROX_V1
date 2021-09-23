@@ -10,7 +10,7 @@ Asena.addCommand({pattern: 'setvar', fromMe: false, desc: Lang.WP}, (async (mess
     var r_text = new Array ();
     
     
-    r_text[0] = "https://www.linkpicture.com/q/IMG-20210629-WA0181.jpg";
+    r_text[0] = "https://raw.githubusercontent.com/amal-dx/DXTROX_V1/master/photo/amalser.png";
     
     
     var i = Math.floor(1*Math.random())
