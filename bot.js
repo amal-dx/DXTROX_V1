@@ -136,7 +136,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('DXTROX PERFECTLY WORKING 💖')
+            chalk.green.bold('DXTROX PERFECTLY WORKING💖')
         );
     });
     
