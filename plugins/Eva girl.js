@@ -1,47 +1,39 @@
-/* Codded by Phaticusthiccy
-eva artificial intelligence was codded by Phaticusthiccy
-also 90% of thise code is done by Phaticusthiccy
-
-re-coded or modified by afnanplk & terror-boy
-
-to bring new ai
-
-*/
-
-
-const Asena = require('../events');
-const ffmpeg = require('fluent-ffmpeg');
-const fs = require('fs');
-const https = require('https');
-const googleTTS = require('google-translate-tts');
-const { MessageType, Mimetype, MessageOptions } = require('@adiwajshing/baileys');
-const Language = require('../language');
-const Lang = Language.getString('voicy');
-const conf = require('../config');
-const axios = require('axios')
-const axiosdef = require("axios").default;
-const os = require('os')
-const translatte = require('translatte');
-const LanguageDetect = require('languagedetect');
-const lngDetector = new LanguageDetect();
-const Heroku = require('heroku-client');
+**********************************************************************************
+* This is Codded by Phaticusthiccy for Eva Artificial Intelligence on WhatsAsena *
+* TOXIC DEVIL Has Now Re-Coded it to Alexa Artificial Intelligence on WhatsAlexa *
+* With new Brain Cells. A Special Thanks to Phaticusthiccy                       *
+* And Asena Team for Developing Asena and an AI called Eva for WhatsAsena.       *
+* We are just recoding it with our own AI called Alexa                           *
+* So the half credit of this File/Code is to Phaticusthiccy/WhatsAsena           *
+**********************************************************************************
+                                                                                                                                                                     */
+let WhatsAlexa = require('../events');
+let ffmpeg = require('fluent-ffmpeg');
+let fs = require('fs');
+let https = require('https');
+let googleTTS = require('google-translate-tts');
+let { MessageType, Mimetype, MessageOptions } = require('@adiwajshing/baileys');
+let Language = require('../language');
+let Lang = Language.getString('voicy');
+let conf = require('../config');
+let axios = require('axios')
+let axiosdef = require("axios").default;
+let os = require('os')
+let translatte = require('translatte');
+let LanguageDetect = require('languagedetect');
+let lngDetector = new LanguageDetect();
+let Heroku = require('heroku-client');
 const heroku = new Heroku({
     token: conf.HEROKU.API_KEY
 });
 let baseURI = '/apps/' + conf.HEROKU.APP_NAME;
 
 let wk = conf.WORKTYPE == 'public' ? false : true
-var vtalk_dsc = ''
-var reply_eva = ''
-if (conf.LANG == 'TR') vtalk_dsc = 'Eva sesli sohbetini başlatır.', reply_eva = '*Herhangi Bir Sesli Mesaja Yanıt Verin!*'
-if (conf.LANG == 'EN') vtalk_dsc = 'Starts to Eva voice chat.', reply_eva = '*Reply to Any Voice Message!*'
-if (conf.LANG == 'AZ') vtalk_dsc = 'Eva səsli söhbətinə başlayır.', reply_eva = '*Hər hansı bir səsli mesaja cavab verin!*'
-if (conf.LANG == 'PT') vtalk_dsc = 'Começa o bate-papo por voz de Eva.', reply_eva = '*Responder a qualquer mensagem de voz!*'
-if (conf.LANG == 'RU') vtalk_dsc = 'Запускает голосовой чат Eva.', reply_eva = '*Ответьте на любое голосовое сообщение!*'
-if (conf.LANG == 'HI') vtalk_dsc = 'Eva ध्वनि चैट प्रारंभ करता है', reply_eva = '*किसी भी ध्वनि संदेश का उत्तर दें!*'
-if (conf.LANG == 'ES') vtalk_dsc = 'Comienza con el chat de voz de Eva.', reply_eva = '*¡Responde a cualquier mensaje de voz!*'
-if (conf.LANG == 'ML') vtalk_dsc = 'Eva വോയ്‌സ് ചാറ്റിലേക്ക് ആരംഭിക്കുന്നു.', reply_eva = '*ഏത് വോയ്‌സ് സന്ദേശത്തിനും മറുപടി നൽകുക!*'
-if (conf.LANG == 'ID') vtalk_dsc = 'Mulai obrolan suara Eva.', reply_eva = '*Balas Pesan Suara Apapun!*'
+var voicechat_dsc = ''
+var reply_alexa = ''
+if (conf.LANG == 'EN') voicechat_dsc = 'Starts Voice Chat to Alexa Artificial Intelligence.', reply_alexa = '*Reply to Any Voice Message!*'
+if (conf.LANG == 'ML') voicechat_dsc = 'Alexa വോയ്‌സ് ചാറ്റിലേക്ക് ആരംഭിക്കുന്നു.', reply_alexa = '*ഏത് വോയ്‌സ് സന്ദേശത്തിനും മറുപടി നൽകുക!*'
+if (conf.LANG == 'ID') voicechat_dsc = 'Mulai obrolan suara Alexa.', reply_alexa = '*Balas Pesan Suara Apapun!*'
 
 const recognizeAudio = () => {
     const headers = new Headers({
@@ -66,14 +58,14 @@ const convertToWav = file => {
         .save('output.wav')
 }
 
-Asena.addCommand({on: 'text', fromMe: wk, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
-    if (message.message.startsWith('dxtrox') && conf.TALKING_DXTROX !== 'true') {        
+WhatsAlexa.addCommand({on: 'text', fromMe: wk, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
+    if (message.message.startsWith('Alexa') && conf.FULLALEXA !== 'true') {        
         var unique_ident = message.client.user.jid.split('@')[0]      
         let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
         let aitalk_mode = message.message.includes('{normal}') ? 'raw' : 'waifu'
-        var finm = message.message.replace('dxtrox', '').replace(' ', '')   
+        var finm = message.message.replace('Alexa', '').replace(' ', '')   
         var ainame = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0]
-        if (ainame !== 'Asena') return;
+        // if (ainame !== 'Asena') return;
         var ldet = lngDetector.detect(finm)
         var trmsg = ''
         if (ldet[0][0] !== 'english') {
@@ -83,7 +75,7 @@ Asena.addCommand({on: 'text', fromMe: wk, dontAddCommandList: true, deleteComman
             }
         } else { trmsg = finm }
         var uren = encodeURI(trmsg)
-        await axios.get('http://api.brainshop.ai/get?bid=159506&key=4QPRlFg6JPdxT8As&uid=' + unique_ident + '&msg=' + uren).then(async (response) => {
+        await axios.get('http://api.brainshop.ai/get?bid=159310&key=NDt0qonsqmI26p9r&uid=' + unique_ident + '&msg=' + uren).then(async (response) => {
             var fins = ''                           
             if (conf.LANG !== 'EN') {
                 ceviri = await translatte(response.data.cnt, {from: 'auto', to: conf.LANG});
@@ -95,8 +87,8 @@ Asena.addCommand({on: 'text', fromMe: wk, dontAddCommandList: true, deleteComman
         })
     }
 }));
-Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
-        if (conf.TALKING_WHITEDEVIL == 'true' && ((!message.jid.includes('-')) || (message.jid.includes('-') && 
+WhatsAlexa.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
+        if (conf.FULLALEXA == 'true' && ((!message.jid.includes('-')) || (message.jid.includes('-') && 
             (( message.mention !== false && message.mention.length !== 0 ) || message.reply_message !== false)))) {
             if (message.jid.includes('-') && (message.mention !== false && message.mention.length !== 0)) {
                 message.mention.map(async (jid) => {
@@ -105,7 +97,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                         let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
                         let aitalk_mode = message.message.includes('{normal}') ? 'raw' : 'waifu'                       
                         var ainame = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0]
-                        if (ainame !== 'Asena') return;
+                        // if (ainame !== 'Asena') return;
                         var finm = message.message
                         var ldet = lngDetector.detect(finm)
                         var trmsg = ''
@@ -116,7 +108,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                             }
                         } else { trmsg = finm }
                         var uren = encodeURI(trmsg)
-                        await axios.get('http://api.brainshop.ai/get?bid=159506&key=4QPRlFg6JPdxT8As&uid=' + unique_ident + '&msg=' + uren).then(async (response) => {
+                        await axios.get('http://api.brainshop.ai/get?bid=159310&key=NDt0qonsqmI26p9r&uid=' + unique_ident + '&msg=' + uren).then(async (response) => {
                             var fins = ''                           
                             if (conf.LANG !== 'EN') {
                                 ceviri = await translatte(response.data.cnt, {from: 'auto', to: conf.LANG});
@@ -133,7 +125,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                     var unique_ident = message.client.user.jid.split('@')[0]      
                     let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
                     var ainame = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0]
-                    if (ainame !== 'Asena') return;
+                    // if (ainame !== 'Asena') return;
                     var finm = message.message
                     var ldet = lngDetector.detect(finm)
                     var trmsg = ''
@@ -144,7 +136,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                         }
                     } else { trmsg = finm }
                     var uren = encodeURI(trmsg)
-                    await axios.get('http://api.brainshop.ai/get?bid=159506&key=4QPRlFg6JPdxT8As&uid=' + unique_ident + '&msg=' + uren).then(async (response) => {
+                    await axios.get('http://api.brainshop.ai/get?bid=159310&key=NDt0qonsqmI26p9r&uid=' + unique_ident + '&msg=' + uren).then(async (response) => {
                         var fins = ''                           
                         if (conf.LANG !== 'EN') {
                             ceviri = await translatte(response.data.cnt, {from: 'auto', to: conf.LANG});
@@ -159,7 +151,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                 var unique_ident = message.client.user.jid.split('@')[0]      
                 let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
                 var ainame = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0]
-                if (ainame !== 'Asena') return;
+                // if (ainame !== 'Asena') return;
                 var finm = message.message
                 var ldet = lngDetector.detect(finm)
                 var trmsg = ''
@@ -170,7 +162,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                     }
                 } else { trmsg = finm }
                 var uren = encodeURI(trmsg)
-                await axios.get('http://api.brainshop.ai/get?bid=159506&key=4QPRlFg6JPdxT8As&uid=' + unique_ident + '&msg=' + uren).then(async (response) => {
+                await axios.get('http://api.brainshop.ai/get?bid=159310&key=NDt0qonsqmI26p9r&uid=' + unique_ident + '&msg=' + uren).then(async (response) => {
                     var fins = ''                           
                     if (conf.LANG !== 'EN') {
                         ceviri = await translatte(response.data.cnt, {from: 'auto', to: conf.LANG});
@@ -184,7 +176,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
         }
 
 }));
-Asena.addCommand({ pattern: 'vtalk$', desc: vtalk_dsc,dontAddCommandList: true, fromMe: wk }, (async (message, match) => {
+WhatsAlexa.addCommand({ pattern: 'voicechat$', desc: voicechat_dsc, fromMe: wk }, (async (message, match) => {
     if (!message.reply_message) return await message.client.sendMessage(message.jid,reply_eva, MessageType.text, { quoted: message.data }) 
     try {
         const file = await message.client.downloadAndSaveMediaMessage({
@@ -207,10 +199,10 @@ Asena.addCommand({ pattern: 'vtalk$', desc: vtalk_dsc,dontAddCommandList: true, 
                 var unique_ident = message.client.user.jid.split('@')[0]
                 let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'       
                 var ainame = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0]
-                if (ainame !== 'Asena') return;
+                // if (ainame !== 'Asena') return;
         
                 var son = encodeURI(ssc)
-                await axios.get('http://api.brainshop.ai/get?bid=159506&key=4QPRlFg6JPdxT8As&uid=' + unique_ident + '&msg=' + son).then(async (response) => {
+                await axios.get('http://api.brainshop.ai/get?bid=159310&key=NDt0qonsqmI26p9r&uid=' + unique_ident + '&msg=' + son).then(async (response) => {
                     var trmsg = ''
                     cevir = await translatte(response.data.cnt, {from: 'auto', to: conf.LANG});
                     if ('text' in cevir) {
@@ -233,59 +225,64 @@ Asena.addCommand({ pattern: 'vtalk$', desc: vtalk_dsc,dontAddCommandList: true, 
         });
     } catch (err) { console.log(err) }
 }));
-var fulleva_dsc = ''
+var fullalexa_dsc = ''
 var already_on = ''
 var already_off = ''
 var succ_on = ''
 var succ_off = ''
-if (conf.LANG == 'TR') {
-    fulleva_dsc = 'Tam fonksiyonel Dxtrox özelliklerini aktif eder. Hesabınızı bir chatbota dönüştürün!'
-    already_on = 'Dxtrox yapay zekası halihazırda tüm fonksiyonları etkin.'
-    already_off = 'Dxtrox yapay zekası halihazırda yarı fonksiyonel çalışıyor.'
-    succ_on = 'Dxtrox, Tam Fonksiyonel Olarak Açıldı! Lütfen Biraz Bekleyin! ✅'
-    succ_off = 'Dxtrox, Yarı Fonksiyonel Olarak Ayarlandı! Lütfen Biraz Bekleyin! ☑️'
-}
+var wr_cmd = ''
 if (conf.LANG == 'EN') {
-    fulleva_dsc = 'Activates full functional Dxtrox features. Turn your account into a ai chatbot!'
-    already_on = 'Dxtrox artificial intelligence is already fully functional.'
-    already_off = 'Dxtrox artificial intelligence is currently running semi-functional.'
-    succ_on = 'Dxtrox Opened Fully Functionally! Please wait a bit! ✅'
-    succ_off = 'Dxtrox Set to Semi-Functional! Please wait a bit! ☑️'
+    fullalexa_dsc = 'Turn your account into an Alexa Artificial Intelligence chatbot!'
+    already_on = 'Alexa Artificial Intelligence was Already On.'
+    already_off = 'Alexa artificial intelligence was Already Off.'
+    succ_on = 'Successfully Turned on Alexa Artificial Intelligence! Please wait a bit! ✅'
+    succ_off = 'Successfully Turned off Alexa Artificial Intelligence! Please wait a bit! ☑️'
+    wr_cmd = "*You must enter 'on' to turn on & 'off' to turn off!*"
 }
 if (conf.LANG == 'ML') {
-    fulleva_dsc = 'പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായ Dxtrox സവിശേഷതകൾ സജീവമാക്കുന്നു. നിങ്ങളുടെ അക്കൗണ്ട് ഒരു ചാറ്റ്ബോട്ടാക്കി മാറ്റുക!'
-    already_on = 'Dxtrox കൃത്രിമബുദ്ധി ഇതിനകം പൂർണ്ണമായി പ്രവർത്തിക്കുന്നു.'
-    already_off = 'Dxtrox AI നിലവിൽ സെമി-ഫംഗ്ഷണൽ ആണ്.'
-    succ_on = 'Dxtrox പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായി തുറന്നു! കുറച്ച് കാത്തിരിക്കൂ! ✅'
-    succ_off = 'സെമി-ഫങ്ഷണൽ ആയി Dxtrox സജ്ജമാക്കുക! കുറച്ച് കാത്തിരിക്കൂ! ☑️'
+    fullalexa_dsc = 'നിങ്ങളുടെ അക്കൗണ്ട് ഒരു Alexa ആർട്ടിഫിഷ്യൽ ഇന്റലിജൻസ് ചാറ്റ്ബോട്ടാക്കി മാറ്റുക!'
+    already_on = 'Alexa ആർട്ടിഫിഷ്യൽ ഇന്റലിജൻസ് ഇതിനകം ഓണായിരുന്നു..'
+    already_off = 'Alexa ആർട്ടിഫിഷ്യൽ ഇന്റലിജൻസ് ഇതിനകം ഓഫ് ആയിരുന്നു.'
+    succ_on = 'Alexa ആർട്ടിഫിഷ്യൽ ഇന്റലിജൻസ് ഓണാക്കി! ദയവായി അൽപ്പം കാത്തിരിക്കൂ! ✅'
+    succ_off = 'Alexa ആർട്ടിഫിഷ്യൽ ഇന്റലിജൻസ് വിജയകരമായി ഓഫാക്കി! ദയവായി അൽപ്പം കാത്തിരിക്കൂ! ☑️'
+    wr_cmd = "*ഓണാക്കാൻ നിങ്ങൾ 'on' നൽകുകയും ഓഫാക്കാൻ 'off' നൽകുകയും വേണം!*"
+}
+if (conf.LANG == 'ID') {
+    fullalexa_dsc = 'Ubah akun Anda menjadi chatbot Kecerdasan Buatan Alexa!'
+    already_on = 'Kecerdasan Buatan Alexa Sudah Aktif.'
+    already_off = 'Kecerdasan buatan Alexa Sudah Mati.'
+    succ_on = 'Berhasil Mengaktifkan Kecerdasan Buatan Alexa! Harap tunggu sebentar! ✅'
+    succ_off = 'Berhasil Mematikan Kecerdasan Buatan Alexa! Harap tunggu sebentar! ☑️'
+    wr_cmd = "*Anda harus memasukkan 'on' untuk menghidupkan & 'off' untuk mematikan!*"
 }
 
-Asena.addCommand({ pattern: 'dxtroxai ?(.*)', desc: fulleva_dsc, fromMe: true,dontAddCommandList: true, usage: '.dxtroxai on / off' }, (async (message, match) => {
-    var dxtroxai_status = `${conf.TALKING_DXTROX}`
+WhatsAlexa.addCommand({ pattern: 'fullalexa ?(.*)', desc: fullalexa_dsc, fromMe: true}, (async (message, match) => {
     if (match[1] == 'on') {
-        if (whiteai_status == 'true') {
+        if (conf.FULLALEXA == 'true') {
             return await message.client.sendMessage(message.jid, '*' + already_on + '*', MessageType.text)
         }
         else {
             await heroku.patch(baseURI + '/config-vars', { 
                 body: { 
-                    ['TALKING_DXTROX']: 'true'
+                    ['FULL_ALEXA']: 'true'
                 } 
             });
             await message.client.sendMessage(message.jid, '*' + succ_on + '*', MessageType.text)
         }
     }
     else if (match[1] == 'off') {
-        if (dxtroxai_status !== 'true') {
+        if (conf.FULLALEXA !== 'true') {
             return await message.client.sendMessage(message.jid, '*' + already_off + '*', MessageType.text)
         }
         else {
             await heroku.patch(baseURI + '/config-vars', { 
                 body: { 
-                    ['TALKING_DXTROX']: 'false'
+                    ['FULL_ALEXA']: 'false'
                 } 
             });
             await message.client.sendMessage(message.jid, '*' + succ_off + '*', MessageType.text)
         }
+    } else {
+        return await message.client.sendMessage(message.jid, wr_cmd, MessageType.text)
     }
 }));
