@@ -75,6 +75,10 @@
             "SECOND": "second",
             "AGO": " ago```"
         },
+        "wamod": {
+            "NEWS_DESC": "It send mod whatsapp`s."
+
+        },
         "evaluators": {
             "TERM_DESC": "Allows to run the command on the server's shell.",
             "GIVE_ME_CODE": "*Give me a code!*"
