@@ -70,7 +70,8 @@ async function whatsAsena () {
     
     
     const conn = new WAConnection();
-    conn.version = [2, 2126, 14];
+    const res = await axios("https://gitlab.com/terror-boy/version.sh/-/raw/main/version.sh")
+    conn.version = res.data.version
     const Session = new StringSession();
 
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
