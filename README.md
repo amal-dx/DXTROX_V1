@@ -56,9 +56,9 @@ By establishing the Asena, you are deemed to have accepted these responsibilitie
 
 ---------
 
-<a href="https://safwanganz-api.herokuapp.com"><img src="https://i.ibb.co/0s70fxc/OFC-20211106-131725.jpg" width="100" height="100"></a> | [![DXTROX](https://github.com/amal-dx.png?size=100)](https://github.com/amal-dx) | [![TERROR-BOY](https://github.com/terror-boy.png?size=100)](https://github.com/terror-boy) | [![SAFWAN-GANZ](https://github.com/SafwanGnaz.png?size=100)](https://github.com/SafwanGanz) 
+<a href="https://safwanganz-api.herokuapp.com"><img src="https://i.ibb.co/0s70fxc/OFC-20211106-131725.jpg" width="100" height="100"></a> | [![DXTROX](https://github.com/amal-dx.png?size=100)](https://github.com/amal-dx) | [![TERROR-BOY](https://github.com/terror-boy.png?size=100)](https://github.com/terror-boy) | [![SAFWAN-GANZ](https://github.com/SafwanGanz.png?size=100)](https://github.com/SafwanGanz) 
 ----|----|----|----
-[XTEAM](https://https://safwanganz-api.herokuapp.com) | [DXTROX](https://github.com/amal-dx) | [TERROR-BOY](https://github.com/terror-boy) | [SAFWAN-GANZ](https://github.com/SafwanGanz)
+[ALIEN-ALFA](https://https://safwanganz-api.herokuapp.com) | [DXTROX](https://github.com/amal-dx) | [TERROR-BOY](https://github.com/terror-boy) | [SAFWAN-GANZ](https://github.com/SafwanGanz)
 Powered by ALIEN-ALFA | Author / Creator | Most Active Contributor | 2nd Most Active Contributor
 
 
