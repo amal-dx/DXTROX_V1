@@ -56,10 +56,11 @@ By establishing the Asena, you are deemed to have accepted these responsibilitie
 ## Developers
 <div align="center">
     
-  [![DXTROX](https://github.com/amal-dx.png?size=200)](https://github.com/amal-dx) | [![TERROR-BOY](https://github.com/terror-boy.png?size=200)](https://github.com/terror-boy) | [![SAFWAN-GANZ](https://github.com/SafwanGanz.png?size=200)](https://github.com/SafwanGanz)
-----|----
-[DXTROX](https://github.com/amal-dx)  | [TERROR-BOY](https://github.com/terror-boy) | [SAFWAN-GANZ](https://github.com/SafwanGanz)
-Base, Bug Fixes, Modules | Base, Bug Fixes, Modules | Bug Fixes, Modules
+  [![DXTROX](https://github.com/amal-dx.png?size=100)](https://github.com/amal-dx) | [![SafwanGanz](https://github.com/SafwanGanz.png?size=100)](https://github.com/SafwanGanz) | [![TERROR-BOY](https://github.com/karthik.png?size=100)](https://github.com/karthik) 
+----|----|----|----
+[DXTROX-AMAL](https://github.com/amal-dx) | [SAFWAN-GANZ](https://github.com/SafwanGanz) | [TERROR-BOY](https://github.com/karthik)
+Author / Creator | Most Active Contributor | 2nd Most Active Contributor
+
   </div>
 
 
