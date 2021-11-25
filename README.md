@@ -53,18 +53,16 @@ Absolutely, Asena executives do not accept responsibility.
 By establishing the Asena, you are deemed to have accepted these responsibilities.
 ```
 
-## Developers
-<div align="center">
-    
-  [![DXTROX](https://github.com/amal-dx.png?size=100)](https://github.com/amal-dx) | [![SafwanGanz](https://github.com/SafwanGanz.png?size=100)](https://github.com/SafwanGanz) | [![TERROR-BOY](https://github.com/terror-boy.png?size=100)](https://github.com/terror-boy) 
-  
+
+---------
+
+<a href="https://safwanganz-api.herokuapp.com"><img src="https://i.ibb.co/0s70fxc/OFC-20211106-131725.jpg" width="100" height="100"></a> | [![DXTROX](https://github.com/amal-dx.png?size=100)](https://github.com/amal-dx) | [![TERROR-BOY](https://github.com/terror-boy.png?size=100)](https://github.com/terror-boy) | [![SAFWAN-GANZ](https://github.com/SafwanGnaz.png?size=100)](https://github.com/SafwanGanz) 
 ----|----|----|----
-  
-[DXTROX-AMAL](https://github.com/amal-dx) | [SAFWAN-GANZ](https://github.com/SafwanGanz) | [TERROR-BOY](https://github.com/terror-boy)
-Author / Creator | Most Active Contributor | 2nd Most Active Contributor
+[XTEAM](https://https://safwanganz-api.herokuapp.com) | [DXTROX](https://github.com/amal-dx) | [TERROR-BOY](https://github.com/terror-boy) | [SAFWAN-GANZ](https://github.com/SafwanGanz)
+Powered by ALIEN-ALFA | Author / Creator | Most Active Contributor | 2nd Most Active Contributor
 
-  </div>
 
+NOTE: This project will not maintained after `27 June 2021`, that means no update. Feel free to anyone to continue this project :)
 
   
   
