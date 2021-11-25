@@ -58,8 +58,8 @@ By establishing the Asena, you are deemed to have accepted these responsibilitie
     
   [![DXTROX](https://github.com/amal-dx.png?size=200)](https://github.com/amal-dx) | [![TERROR-BOY](https://github.com/terror-boy.png?size=200)](https://github.com/terror-boy)  
 ----|----
-[DXTROX](https://github.com/amal-dx)  | [TERROR-BOY](https://github.com/terror-boy)  
-Base, Bug Fixes, Modules | Base, Bug Fixes, Modules 
+[DXTROX](https://github.com/amal-dx)  | [TERROR-BOY](https://github.com/terror-boy) | [SAFWANGANZ](https://github.com/SafwanGanz)
+Base, Bug Fixes, Modules | Base, Bug Fixes, Modules | Bug Fixes, Modules
   </div>
 
 
