@@ -43,6 +43,7 @@ bash <(curl -L https://tinyurl.com/krzpy3rc)
   
 ### Amal-dx
 
+### Safwan Ganz
 
 ### ⚠️ Warning! 
 ```
