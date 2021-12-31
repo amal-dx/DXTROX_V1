@@ -27,22 +27,13 @@ Click WA logo to Join Support Group 👇👇
     
 ## Setup
 <div align="center">
-
-  ### Simple Method
+### CLICK HERE👇🏻👇🏻👇🏻👇🏻
   
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@amal-dx/WhiteDevil-1?v=1?v=1)
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/amal-dx/DXTROX_V1)
-     </div>
-<br>
-<br >
-If Repl.it not working Try Termux for Qr scanning.Just Copy the Link Below in Termux
-```
-bash <(curl -L https://tinyurl.com/krzpy3rc)
-``` 
+  [![SETUP](https://www.linkpicture.com/q/dx.png)](https://github.com/terror-boy/Dxtrox-v-installer)
+ 
   
 ### Amal-dx
-
+### KTB (TERROR-BOY)
 ### Safwan Ganz
 
 ### ⚠️ Warning! 
