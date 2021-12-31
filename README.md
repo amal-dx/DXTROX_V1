@@ -71,12 +71,12 @@ NOTE: This project will  maintained after `IF YOU REPORT ERROR`, that means no u
  # TO REPORT ERROR:-
   ## AMAL DX 👇🏻👇🏻👇🏻
   
-  - [![SETUP](https://www.linkpicture.com/q/download-1_50.jpg)](wa.me/917736308760?text=*To%20Report%20Error%20In%20Dxtrox-v1*)
+  - [![SETUP](https://www.linkpicture.com/q/download-1_50.jpg)](https://wa.me/917736308760?text=*To%20Report%20Error%20In%20Dxtrox-v1*)
   
   
   ## TERROR-BOY 👇🏻👇🏻👇🏻
   
-  - [![SETUP](https://www.linkpicture.com/q/image-260nw-601427237.png)](wa.me/994403216454?text=*To%20Report%20Error%20In%20Dxtrox-v1*)
+  - [![SETUP](https://www.linkpicture.com/q/image-260nw-601427237.png)](https://wa.me/994403216454?text=*To%20Report%20Error%20In%20Dxtrox-v1*)
   
   
 
