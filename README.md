@@ -66,7 +66,19 @@ By establishing the Asena, you are deemed to have accepted these responsibilitie
 Powered by ALIEN-ALFA | Author / Creator | Most Active Contributor | 2nd Most Active Contributor
 
 
-NOTE: This project will not maintained after `27 June 2021`, that means no update. Feel free to anyone to continue this project :)
+NOTE: This project will  maintained after `IF YOU REPORT ERROR`, that means no update. Feel free to anyone to continue this project :)
+  
+ # TO REPORT ERROR:-
+  ## AMAL DX 👇🏻👇🏻👇🏻
+  
+  - [![SETUP](https://www.linkpicture.com/q/download-1_50.jpg)](wa.me/917736308760?text=*To%20Report%20Error%20In%20Dxtrox-v1*)
+  
+  
+  ## TERROR-BOY 👇🏻👇🏻👇🏻
+  
+  - [![SETUP](https://www.linkpicture.com/q/image-260nw-601427237.png)](wa.me/994403216454?text=*To%20Report%20Error%20In%20Dxtrox-v1*)
+  
+  
 
   
   
