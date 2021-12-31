@@ -26,16 +26,29 @@ Click WA logo to Join Support Group 👇👇
   </div>
     
 ## Setup
-<div align="center">
 ### CLICK HERE👇🏻👇🏻👇🏻👇🏻
+
+<div align="center">
   
-  [![SETUP](https://www.linkpicture.com/q/dx.png)](https://github.com/terror-boy/Dxtrox-v-installer)
+[![SETUP](https://www.linkpicture.com/q/dx.png)](https://github.com/terror-boy/Dxtrox-v-installer)
+ 
  
   
-### Amal-dx
-### KTB (TERROR-BOY)
-### Safwan Ganz
+  
+## PART OF THIS PROJECT
+  
+  
+  - Amal-dx
+  
+  
+  - KTB (TERROR-BOY)
+  
+  
+  - Safwan Ganz
 
+  
+  
+  
 ### ⚠️ Warning! 
 ```
 Due to Userbot; Your WhatsApp account may be banned.
